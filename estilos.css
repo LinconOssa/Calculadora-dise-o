@@ -1,0 +1,99 @@
+html{
+    font-family: "Quicksand", sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+
+  
+body {
+
+    display: flex;
+    justify-content: center;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(169,181,76,1) 49%, rgba(199,183,148,1) 100%);
+
+  }
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21,71,109);
+    width: 530px;
+    height: inherit;
+    border-radius: 30px;
+}
+ 
+  .flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 0 10px;
+    
+
+  }
+  .flex-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .flex-item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: rgb(170,167,215);
+    color: rgb(247,254,255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 86px;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .1s;
+  }
+  p::selection{
+   color: rgb(247,254,255);
+  }
+  .flex-item2:active{
+    transition: .2s;
+    box-shadow: none;
+    transform: scale(.9);/*no olvidar*/
+  }
+  .igual{
+    width: calc(40% + 15px);
+    background-color: rgb(232,114,99);
+    
+  }
+  .igual p::selection{
+    background-color: rgb(232,114,99);
+  }
+
+  input{
+    
+    background-color: rgb(21,71,109);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(247,254,255);
+    margin: 20px;
+    height: 86px;
+    font-size: 60px;
+    width: 100%;
+    cursor: text;
+    border-radius: 30px;
+    border: none;
+    text-align:end;
+    padding: 0px 30px;
+    transition: .5s;
+    outline:0;
+  }
+  input:focus{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: .5s;
+  }
