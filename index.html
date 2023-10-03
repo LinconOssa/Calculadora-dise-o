@@ -5,79 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-
-    <title>Aprendiendo Flexbox</title>
+    <link rel="shortcut icon" href="ima/kisspng-javascript-and-jquery-interactive-front-end-web-d--5b6cfa2639dfc7.1859268215338685822371.png">
+    <title>Calculadora-con-Javascrrpt</title>
 </head>
 <body>
     <section>
-        <div class="flex-container">
-            <div class="flex-item">
-                <input type="number">
-            </div>        
-        <div class="flex-item2">
-            <p>C</p>
-        </div>
-        <div class="flex-item2">
-            <P>+-</P>
-        </div>
-        <div class="flex-item2">
-            <p>%</p>
-        </div>
-        <div class="flex-item2">
-            <p>/</p>
-        </div>
-        <div class="flex-item2">
-            <p>7</p>
-        </div>
-        <div class="flex-item2">
-            <p>8</p>
-        </div>
-        <div class="flex-item2">
-           <p>9</p>
-        </div>
-        <div class="flex-item2">
-            <p>X</p>
-        </div>
-        <div class="flex-item2">
-            <P>4</P>
-        </div>
-        <div class="flex-item2">
-            <P>5</P>
-        </div>
-        <div class="flex-item2">
-            <P>6</P>
-        </div>
-        <div class="flex-item2">
-            <P>-</P>
-        </div>
-        <div class="flex-item2">
-            <P>1</P>
-        </div>
-        <div class="flex-item2">
-            <p>2</p>
-        </div>
-        <div class="flex-item2">
-            <p>3</p>
-        </div>
-        <div class="flex-item2">
-            <p>+</p>
-        </div>
-        <div class="flex-item2">
-          <p>0</p>
-        </div>
-        <div class="flex-item2">
-            <p>.</p>
-        </div>
-        <div class="flex-item2 igual">
-            <p>=</p>
-        </div>
-    </div>
+   
+<div class="container">
+    <input type="text" id="result" class="screen" />
+   
 
 
+        <div type="button" value="C" onclick="clearScreen()" class="btn">C</div> 
+        <div type="button" value="+-" class="operator" onclick="display('+-')" >+-</div> 
+        <div type="button" value="%" class="operator" onclick="display('%')" >%</div> 
+        <div type="button" value="/" class="operator" onclick="display('/')" >/</div> 
+        <div type="button" value="7" class="btn" onclick="display('7')">7</div>
+        <div type="button" value="8" class="btn" onclick="display('8')" >8</div> 
+        <div type="button" value="9" class="btn" onclick="display('9')">9</div> 
+        <div type="button" value="*" class="operator" onclick="display('*')">X</div> 
 
+        
+         <div type="button" value="4" class="btn" onclick="display('4')" >4</div>
+         <div type="button" value="5" class="btn" onclick="display('5')" >5</div>
+         <div type="button" value="6" class="btn" onclick="display('6')" >6</div>
+         <div type="button" value="-" class="operator" onclick="display('-')">-</div> 
+
+        
+         <div  type="button" value="1" class="btn" onclick="display('1')" >1</div>
+         <div type="button" value="2" class="btn" onclick="display('2')" >2</div>   
+         <div type="button" value="3" class="btn" onclick="display('3')" >3</div>  
+         <div type="button" value="+" class="operator" onclick="display('+')">+</div> 
+
+        
+         <div type="button" value="0" class="btn" onclick="display('0')">0</div>
+
+        <div type="button" value="." class="operator" onclick="display('.')" >.</div>
+        <div type="button" value="=" class="btn igual" onclick="solve()">=</div> 
+        
+
+</div>     
 </section>
-
-
-
+<script src="index.js"></script>
 </body>
 </html>
